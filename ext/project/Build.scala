@@ -14,7 +14,7 @@ object JrubyScalaCollections extends Build {
         projectName, scalaVersion, projectVersion, updateReport, out,
         _
       ) =>
-        val dist = (out / ".." / ".." / "dist").getAbsoluteFile
+        val dist = (out / ".." / ".." / ".." / "lib" / "ext").getAbsoluteFile
         // Clean up dist dir.
         IO.delete(dist)
 

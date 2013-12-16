@@ -1,6 +1,6 @@
 require 'jruby'
 require 'set'
-require File.dirname(__FILE__) + '/../../ext/dist/collections.jar'
+require 'ext/collections.jar'
 
 module JRuby::ScalaSupport
   class ImmutableException < StandardError; end
