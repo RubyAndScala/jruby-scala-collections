@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "jruby-scala-collections"
-  s.version     = "0.1.5"
+  s.version     = "0.1.6"
   s.platform    = "java"
   s.authors     = "Artūras Šlajus"
   s.email       = "arturas.slajus@gmail.com"
