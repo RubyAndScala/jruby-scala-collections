@@ -9,8 +9,12 @@ end
 
 task :build_gem => [:jar, :build]
 
+task :compile_scala do
+  sh "cd ext && sbt compile write-classpath"
+end
+
 namespace :test do
-  task :mspec do
+  task :mspec => :compile_scala do
     sh "bundle exec mspec -g focus -G fails rubyspec"
   end
 end
