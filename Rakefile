@@ -14,7 +14,7 @@ task :compile_scala do
 end
 
 namespace :test do
-  task :mspec => :compile_scala do
+  task :mspec => [:compile_scala, :jar] do
     sh "bundle exec mspec -g focus -G fails rubyspec"
   end
 end
