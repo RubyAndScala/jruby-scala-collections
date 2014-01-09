@@ -12,12 +12,12 @@ Gem::Specification.new do |s|
 
   s.files        = Dir.glob("lib/**/*") + %w(README.md lib/ext/collections.jar)
   s.require_path = 'lib'
-  s.add_development_dependency('rake')
-  s.add_development_dependency('rubygems-tasks')
-  s.add_development_dependency('rspec')
-  s.add_development_dependency('mspec')
-  s.add_development_dependency('guard')
-  s.add_development_dependency('guard-rspec-jruby')
-  s.add_development_dependency('guard-bundler')
-  s.add_development_dependency('guard-shell')
+  s.add_development_dependency('rake', '~> 10.0')
+  s.add_development_dependency('rubygems-tasks', '~> 0.2')
+  s.add_development_dependency('rspec', '~> 2.14')
+  s.add_development_dependency('mspec', '~> 1.5')
+  s.add_development_dependency('guard', '~> 2.2')
+  s.add_development_dependency('guard-rspec-jruby', '~> 0')
+  s.add_development_dependency('guard-bundler', '~> 2.0')
+  s.add_development_dependency('guard-shell', '~> 0.6')
 end
