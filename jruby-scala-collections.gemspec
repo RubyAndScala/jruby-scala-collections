@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.summary     = "Compiled against JRuby 1.7.4/Scala 2.10.2"
   s.description = "Interoperability layer for passing JRuby & Scala collections back and forth. See README.md for more info."
 
-  s.files        = Dir.glob("lib/**/*") + %w(README.md)
+  s.files        = Dir.glob("lib/**/*") + %w(README.md lib/ext/collections.jar)
   s.require_path = 'lib'
   s.add_development_dependency('rake')
   s.add_development_dependency('rubygems-tasks')
