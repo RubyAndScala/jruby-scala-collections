@@ -1,6 +1,6 @@
-## What is it?
+## jruby-scala-collections [![Build Status](https://travis-ci.org/RubyAndScala/jruby-scala-collections.png?branch=master)](https://travis-ci.org/RubyAndScala/jruby-scala-collections)
 
-A tiny interoperability library for passing JRuby/Scala collections back
+jruby-scala-collections is a tiny interoperability library for passing JRuby/Scala collections back
 and forth.
 
 https://rubygems.org/gems/jruby-scala-collections
