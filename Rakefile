@@ -8,3 +8,11 @@ task :jar do
 end
 
 task :build_gem => [:jar, :build]
+
+namespace :test do
+  task :mspec do
+    sh "bundle exec mspec -g focus -G fails rubyspec"
+  end
+end
+
+task :default => "test:mspec"
