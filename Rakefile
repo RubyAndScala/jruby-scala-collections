@@ -7,7 +7,7 @@ task :jar do
   sh "cd ext && sbt dist"
 end
 
-task :build_gem => [:jar, :build]
+file 'lib/ext/collections.jar' => :jar
 
 task :compile_scala do
   sh "cd ext && sbt compile write-classpath"
