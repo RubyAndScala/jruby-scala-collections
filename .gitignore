@@ -1,6 +1,9 @@
 # Built gem files
 *.gem
 
+# Don't include Gemfile.lock in gems: http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
+Gemfile.lock
+
 # IDEA stuff
 .idea
 *.iml
