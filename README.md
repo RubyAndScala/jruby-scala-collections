@@ -77,3 +77,7 @@ Guard is configured so that `bundle exec guard` runs all tests that have the foc
 If you want to run all tests that should be working, use `bundle exec mspec -G fails rubyspec`.
 If you have implemented functionality, run `bundle exec mspec tag rubyspec` to update the list
 of failing tests and check with a `git diff` that you haven't broken other functionality.
+
+### Development environment
+In order to compile and package the project, an existing [SBT](http://www.scala-sbt.org/) installation must be available. Then just go to the 
+`ext` directory and execute `sbt dist`. Then go back to the upper directory and execute `gem build jruby-scala-collections.gemspec`

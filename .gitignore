@@ -11,5 +11,7 @@
 # SBT stuff
 target/
 boot/
-ext/lib/jruby.jar
 ext/dist/
+lib/ext/
+
+.ruby-version

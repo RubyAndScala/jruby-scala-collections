@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jruby-scala-collections (0.1.4)
+    jruby-scala-collections (0.1.4-java)
 
 GEM
   remote: https://rubygems.org/
