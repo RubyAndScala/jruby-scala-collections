@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.platform    = "java"
   s.authors     = "Artūras Šlajus"
   s.email       = "arturas.slajus@gmail.com"
-  s.homepage    = "http://github.com/arturaz/jruby-scala-collections"
+  s.homepage    = "https://github.com/RubyAndScala/jruby-scala-collections"
   s.summary     = "Compiled against JRuby 1.7.4/Scala 2.10.2"
   s.description = "Interoperability layer for passing JRuby & Scala collections back and forth. See README.md for more info."
 
