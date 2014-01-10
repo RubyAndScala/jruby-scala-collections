@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/RubyAndScala/jruby-scala-collections.png?label=ready)](https://waffle.io/RubyAndScala/jruby-scala-collections)
 ## jruby-scala-collections [![Build Status](https://travis-ci.org/RubyAndScala/jruby-scala-collections.png?branch=master)](https://travis-ci.org/RubyAndScala/jruby-scala-collections)
 
 jruby-scala-collections is a tiny interoperability library for passing JRuby/Scala collections back
