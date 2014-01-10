@@ -4,7 +4,8 @@ Gem::Specification.new do |s|
   s.name        = "jruby-scala-collections"
   s.version     = "0.1.6"
   s.platform    = "java"
-  s.authors     = "Artūras Šlajus"
+  s.authors     = ["Artūras Šlajus", "Martin Mauch"]
+  s.license     = "Apache 2.0"
   s.email       = "arturas.slajus@gmail.com"
   s.homepage    = "https://github.com/RubyAndScala/jruby-scala-collections"
   s.summary     = "Compiled against JRuby 1.7.4/Scala 2.10.2"
