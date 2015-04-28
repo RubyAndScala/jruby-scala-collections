@@ -43,13 +43,13 @@ object JrubyScalaCollections extends Build {
         name                := "jruby-scala-collections",
         organization        := "com.tinylabproductions",
         version             := "1.0",
-        scalaVersion        := "2.10.2",
+        scalaVersion        := "2.11.6",
         scalacOptions       := Seq("-deprecation", "-unchecked"),
         autoCompilerPlugins := true,
         resolvers           := Seq(
         ),
         libraryDependencies := Seq(
-          "org.scala-lang" % "scala-library" % "2.10.2",
+          "org.scala-lang" % "scala-library" % "2.11.6",
           "org.jruby" % "jruby-complete" % "1.7.4"
         ),
         distTask,
