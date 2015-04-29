@@ -34,7 +34,7 @@ Example:
 * ```Hash#to_scala``` becomes ```scala.collection.mutable.Map```
 * ```Set#to_scala``` becomes ```scala.collection.mutable.Set```
 
-Take node that even collections inside collections are wrapped:
+Take note that even collections inside collections are wrapped:
 
     > a = [1,[2,3],{4=>5}].to_scala
      => #<Java::JrubyCollection::ListWrapper:0x768bdb> 
