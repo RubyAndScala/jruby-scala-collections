@@ -1,6 +1,7 @@
 require 'jruby'
 require 'set'
 require 'ext/collections.jar'
+require 'java'
 
 module JRuby::ScalaSupport
   class ImmutableException < StandardError; end
@@ -159,7 +160,7 @@ module JRuby::ScalaSupport
       private
       def real_map
         case @raw
-        when scala.collection.Map::WithDefault then @raw.send(:underlying)
+        when Java::scala.collection.Map::WithDefault then @raw.send(:underlying)
         else @raw
         end
       end
@@ -213,7 +214,7 @@ module JRuby::ScalaSupport
 
         def new(default_value=nil, &default_block)
           raise ArgumentError, "You can only provide either a default value or a block" if default_value && default_block
-          h = scala.collection.mutable.HashMap.new
+          h = Java::scala.collection.mutable.HashMap.new
           if default_block
             h = h.with_default {|k| default_block.call(h,k) }
           end
