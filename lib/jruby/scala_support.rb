@@ -181,8 +181,6 @@ module JRuby::ScalaSupport
       JRuby::ScalaSupport::Common.fake_identity self, Hash
 
       class << self
-        alias_method :previous_new, :new
-
         def [](*args)
           hash = new
           if args.size == 1
@@ -210,16 +208,6 @@ module JRuby::ScalaSupport
           end
 
           hash
-        end
-
-        def new(default_value=nil, &default_block)
-          raise ArgumentError, "You can only provide either a default value or a block" if default_value && default_block
-          h = Java::scala.collection.mutable.HashMap.new
-          if default_block
-            h = h.with_default {|k| default_block.call(h,k) }
-          end
-          h = h.with_default_value(default_value) if default_value
-          previous_new(h)
         end
       end
 
